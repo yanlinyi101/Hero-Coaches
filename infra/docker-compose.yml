@@ -1,0 +1,36 @@
+# Hero Coaches - Docker Compose
+# M1-E0 阶段：占位文件，后续添加 Postgres/Redis/MinIO
+
+version: '3.8'
+
+services:
+  # 后续添加数据库、缓存、对象存储等
+  # postgres:
+  #   image: postgres:15
+  #   environment:
+  #     POSTGRES_DB: herocoaches
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: postgres
+  #   ports:
+  #     - "5432:5432"
+  #
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+  #
+  # minio:
+  #   image: minio/minio
+  #   command: server /data --console-address ":9001"
+  #   environment:
+  #     MINIO_ROOT_USER: minioadmin
+  #     MINIO_ROOT_PASSWORD: minioadmin
+  #   ports:
+  #     - "9000:9000"
+  #     - "9001:9001"
+  #   volumes:
+  #     - minio_data:/data
+
+# volumes:
+#   minio_data:
+
